@@ -2,7 +2,7 @@ package ThreadAbstraction;
 
 /**
  * An abstract thread that runs only once.
- * Run by calling start().
+ * Use start() to start the thread.
  * Has to be re-created upon every re-use.
  */
 public abstract class AbstractThread extends Thread implements Runnable {

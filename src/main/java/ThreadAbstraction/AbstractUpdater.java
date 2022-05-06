@@ -2,8 +2,13 @@ package ThreadAbstraction;
 
 import DelayCalculator.DelayCalculator;
 import DelayCalculator.DelayOptions;
+import com.google.inject.internal.Nullable;
 
-//TODO: add javadoc
+/**
+ * An abstract thread that performs an infinite loop when started.
+ * Use start() to start the thread.
+ */
+@SuppressWarnings("unused")
 public abstract class AbstractUpdater extends AbstractThread {
     private boolean running;
 
@@ -36,12 +41,15 @@ public abstract class AbstractUpdater extends AbstractThread {
      *
      * @param delayOptions Delay options.
      */
-    public AbstractUpdater(DelayOptions delayOptions) {
+    public AbstractUpdater(@Nullable DelayOptions delayOptions) {
         running = false;
         delayCalculator = new DelayCalculator(delayOptions);
     }
 
-    //TODO: add javadoc
+    /**
+     * Happens when thread runs.
+     * Not overridable (see super.update() for custom actions).
+     */
     @SuppressWarnings("BusyWait")
     @Override
     public final void run() {
@@ -58,12 +66,15 @@ public abstract class AbstractUpdater extends AbstractThread {
         finish();
     }
 
-    //TODO: add javadoc
-    //override this to check for cycle breaking
+    /**
+     * Override this for custom end check for breaking the infinite loop.
+     * Happens at the end of every cycle.
+     */
     public void endCheck() {}
 
-    //TODO: add javadoc
-    //call this to stop
+    /**
+     * Call this to stop the infinite loop.
+     */
     public final void end() {
         running = false;
     }
