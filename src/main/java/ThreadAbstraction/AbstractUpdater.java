@@ -2,6 +2,7 @@ package ThreadAbstraction;
 
 import DelayCalculator.DelayCalculator;
 import DelayCalculator.DelayOptions;
+
 import com.google.inject.internal.Nullable;
 
 /**
@@ -55,7 +56,9 @@ public abstract class AbstractUpdater extends AbstractThread {
     public final void run() {
         running = true;
         while (running) {
+            delayCalculator.start();
             update();
+            delayCalculator.end();
             try {
                 Thread.sleep(delayCalculator.getDelay());
             } catch (InterruptedException e) {

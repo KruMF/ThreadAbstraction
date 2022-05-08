@@ -6,7 +6,7 @@
 
     <groupId>com.github.Krumuvecis</groupId>
     <artifactId>ThreadAbstraction</artifactId>
-    <version>0.2</version>
+    <version>0.3</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -15,7 +15,7 @@
         <junit.jupiter.version>5.8.2</junit.jupiter.version>
         <maven.surefire.version>3.0.0-M5</maven.surefire.version>
 
-        <delayCalculator.version>0.2</delayCalculator.version>
+        <delayCalculator.version>0.3</delayCalculator.version>
     </properties>
 
     <repositories>
