@@ -1,5 +1,7 @@
 # ThreadAbstraction
 
+[![](https://jitpack.io/v/Krumuvecis/ThreadAbstraction.svg)](https://jitpack.io/#Krumuvecis/ThreadAbstraction)
+
 by [Krumuvecis](https://github.com/Krumuvecis)
 
 Free to use and modify for whatever purposes. No copyrights apply.
@@ -11,7 +13,7 @@ Free to use and modify for whatever purposes. No copyrights apply.
 * Maven compiler: 18
 * Maven Surefire: 3.0.0-M7
 * jetbrains annotations: 23.0.0
-* [DelayCalculator](https://github.com/Krumuvecis/DelayCalculator) : 0.4.0
+* [DelayCalculator](https://github.com/Krumuvecis/DelayCalculator) : 0.4.1
 * JUnit: Jupiter 5.9.0-M1 *(has dependency, but not really used; can remove from `pom.xml`)*
 
 
