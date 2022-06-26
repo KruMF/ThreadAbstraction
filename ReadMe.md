@@ -1,20 +1,21 @@
-<h1>ThreadAbstraction</h1>
+# ThreadAbstraction
 
 by [Krumuvecis](https://github.com/Krumuvecis)
 
 Free to use and modify for whatever purposes. No copyrights apply.
 
 
-<h2>Requirements</h2>
+## Requirements
 
-* JDK: 17.0.2
-* Maven compiler: 17
-* Maven Surefire: 3.0.0-M5
+* JDK: 18
+* Maven compiler: 18
+* Maven Surefire: 3.0.0-M7
+* jetbrains annotations: 23.0.0
+* [DelayCalculator](https://github.com/Krumuvecis/DelayCalculator) : 0.4.0
 * JUnit: Jupiter 5.8.2 *(has dependency, but not really used; can remove from `pom.xml`)*
-* [DelayCalculator](https://github.com/Krumuvecis/DelayCalculator) : 0.3
 
 
-<h2>Instructions</h2>
+## Instructions
 
 For single use **AbstractThread** :
 1. Create an `object` that `extends AbstractThread`.
@@ -34,7 +35,7 @@ For cyclical **AbstractUpdater** :
 3. Stop by calling `object.end()`.
 
 
-<h2>Notes</h2>
+## Notes
 
 <i>Latest working version available at `master` branch.</i>
 
