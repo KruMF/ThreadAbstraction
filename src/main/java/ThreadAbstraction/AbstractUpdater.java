@@ -3,7 +3,7 @@ package ThreadAbstraction;
 import DelayCalculator.DelayCalculator;
 import DelayCalculator.DelayOptions;
 
-import com.google.inject.internal.Nullable;
+import org.jetbrains.annotations.Nullable;
 
 /**
  * An abstract thread that performs an infinite loop when started.
