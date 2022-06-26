@@ -12,7 +12,7 @@ Free to use and modify for whatever purposes. No copyrights apply.
 * Maven Surefire: 3.0.0-M7
 * jetbrains annotations: 23.0.0
 * [DelayCalculator](https://github.com/Krumuvecis/DelayCalculator) : 0.4.0
-* JUnit: Jupiter 5.8.2 *(has dependency, but not really used; can remove from `pom.xml`)*
+* JUnit: Jupiter 5.9.0-M1 *(has dependency, but not really used; can remove from `pom.xml`)*
 
 
 ## Instructions
