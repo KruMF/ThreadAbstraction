@@ -4,9 +4,9 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
 
-    <groupId>com.github.Krumuvecis</groupId>
+    <groupId>com.github.KruMF</groupId>
     <artifactId>ThreadAbstraction</artifactId>
-    <version>0.4.0</version>
+    <version>0.4.1</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
@@ -14,7 +14,7 @@
         <maven.compiler.target>18</maven.compiler.target>
         <maven.surefire.version>3.0.0-M7</maven.surefire.version>
         <jetbrains.annotations.version>23.0.0</jetbrains.annotations.version>
-        <delayCalculator.version>0.4.1</delayCalculator.version>
+        <delayCalculator.version>0.4.2</delayCalculator.version>
         <junit.jupiter.version>5.9.0-M1</junit.jupiter.version>
     </properties>
 
@@ -39,7 +39,7 @@
         </dependency>
 
         <dependency>
-            <groupId>com.github.Krumuvecis</groupId>
+            <groupId>com.github.KruMF</groupId>
             <artifactId>DelayCalculator</artifactId>
             <version>${delayCalculator.version}</version>
         </dependency>
