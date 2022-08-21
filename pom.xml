@@ -6,16 +6,17 @@
 
     <groupId>com.github.KruMF</groupId>
     <artifactId>ThreadAbstraction</artifactId>
-    <version>0.4.1</version>
+    <version>0.4.2</version>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+
         <maven.compiler.source>18</maven.compiler.source>
         <maven.compiler.target>18</maven.compiler.target>
         <maven.surefire.version>3.0.0-M7</maven.surefire.version>
         <jetbrains.annotations.version>23.0.0</jetbrains.annotations.version>
-        <delayCalculator.version>0.4.2</delayCalculator.version>
-        <junit.jupiter.version>5.9.0-M1</junit.jupiter.version>
+
+        <delayCalculator.version>0.5.2</delayCalculator.version>
     </properties>
 
     <repositories>
@@ -42,19 +43,6 @@
             <groupId>com.github.KruMF</groupId>
             <artifactId>DelayCalculator</artifactId>
             <version>${delayCalculator.version}</version>
-        </dependency>
-
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-engine</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
-        </dependency>
-        <dependency>
-            <groupId>org.junit.jupiter</groupId>
-            <artifactId>junit-jupiter-api</artifactId>
-            <version>${junit.jupiter.version}</version>
-            <scope>test</scope>
         </dependency>
     </dependencies>
 

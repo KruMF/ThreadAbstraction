@@ -23,8 +23,7 @@ public abstract class AbstractUpdater extends AbstractThread {
      * Creates an abstract updater with default delay options.
      */
     public AbstractUpdater() {
-        running = false;
-        delayCalculator = new DelayCalculator();
+        this(null);
     }
 
     /**
@@ -33,8 +32,7 @@ public abstract class AbstractUpdater extends AbstractThread {
      * @param delay Milliseconds.
      */
     public AbstractUpdater(long delay) {
-        running = false;
-        delayCalculator = new DelayCalculator(delay);
+        this(new DelayOptions(delay));
     }
 
     /**
