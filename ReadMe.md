@@ -18,7 +18,7 @@ Free to use and modify for whatever purposes. No copyrights apply.
 
 ## Instructions
 
-For single use **AbstractThread** :
+For single-use **AbstractThread** :
 1. Create an `object` that `extends AbstractThread`.
    * Implement `object.update()` for custom actions.
    * *(Optional)* override `object.finish()` for custom ending.
