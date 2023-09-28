@@ -6,17 +6,15 @@
 
     <groupId>com.github.KruMF</groupId>
     <artifactId>ThreadAbstraction</artifactId>
-    <version>0.4.2</version>
+    <version>0.5</version>
+    <packaging>jar</packaging>
 
     <properties>
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+        <maven.compiler.source>21</maven.compiler.source>
+        <maven.compiler.target>21</maven.compiler.target>
 
-        <maven.compiler.source>18</maven.compiler.source>
-        <maven.compiler.target>18</maven.compiler.target>
-        <maven.surefire.version>3.0.0-M7</maven.surefire.version>
-        <jetbrains.annotations.version>23.0.0</jetbrains.annotations.version>
-
-        <delayCalculator.version>0.5.2</delayCalculator.version>
+        <delayCalculator.version>0.6</delayCalculator.version>
     </properties>
 
     <repositories>
@@ -28,30 +26,9 @@
 
     <dependencies>
         <dependency>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-surefire-plugin</artifactId>
-            <version>${maven.surefire.version}</version>
-        </dependency>
-        <dependency>
-            <groupId>org.jetbrains</groupId>
-            <artifactId>annotations</artifactId>
-            <version>${jetbrains.annotations.version}</version>
-            <scope>compile</scope>
-        </dependency>
-
-        <dependency>
             <groupId>com.github.KruMF</groupId>
             <artifactId>DelayCalculator</artifactId>
             <version>${delayCalculator.version}</version>
         </dependency>
     </dependencies>
-
-    <build>
-        <plugins>
-            <plugin>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>${maven.surefire.version}</version>
-            </plugin>
-        </plugins>
-    </build>
 </project>

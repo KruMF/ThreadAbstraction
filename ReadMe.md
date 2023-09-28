@@ -9,16 +9,14 @@ Free to use and modify for whatever purposes. No copyrights apply.
 
 ## Requirements
 
-* JDK: 18
-* Maven compiler (source & target) : 18
-* [Maven Surefire Plugin](https://mvnrepository.com/artifact/org.apache.maven.plugins/maven-surefire-plugin) : 3.0.0-M7
-* [JetBrains Java Annotations](https://mvnrepository.com/artifact/org.jetbrains/annotations) : 23.0.0
-* [DelayCalculator](https://github.com/KruMF/DelayCalculator) : 0.5.2
+* JDK: 21
+* Maven compiler (source & target) : 21
+* [DelayCalculator](https://github.com/KruMF/DelayCalculator) : 0.6
 
 
 ## Instructions
 
-For single use **AbstractThread** :
+For single-use **AbstractThread** :
 1. Create an `object` that `extends AbstractThread`.
    * Implement `object.update()` for custom actions.
    * *(Optional)* override `object.finish()` for custom ending.

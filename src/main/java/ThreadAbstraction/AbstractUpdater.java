@@ -1,7 +1,7 @@
 package ThreadAbstraction;
 
-import DelayCalculator.DelayCalculator;
-import DelayCalculator.DelayOptions;
+import delayCalculator.DelayCalculator;
+import delayCalculator.delayOptions.DelayOptions;
 
 import org.jetbrains.annotations.Nullable;
 
@@ -49,7 +49,7 @@ public abstract class AbstractUpdater extends AbstractThread {
      * Happens when thread runs.
      * Not overridable (see super.update() for custom actions).
      */
-    @SuppressWarnings("BusyWait")
+    @SuppressWarnings({"BusyWait", "CallToPrintStackTrace"})
     @Override
     public final void run() {
         running = true;
