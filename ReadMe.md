@@ -10,8 +10,8 @@ Free to use and modify for whatever purposes. No copyrights apply.
 ## Requirements
 
 * JDK: 21
-* Maven compiler (source & target) : 21
-* [DelayCalculator](https://github.com/KruMF/DelayCalculator) : 0.6
+* Maven compiler : 21
+* [DelayCalculator](https://github.com/KruMF/DelayCalculator) : 0.6.2
 
 
 ## Instructions
